@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
     "coffee-delivery": "file:",
     "desafio-02": "file:",
+    "eslint": "^8.57.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
