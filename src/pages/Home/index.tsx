@@ -6,7 +6,10 @@ import {
 } from '@phosphor-icons/react'
 import { useTheme } from 'styled-components'
 
-import { Heading, Hero, HeroContent, Info } from './styles'
+import { Card } from '../../components/Card'
+
+import { coffees } from '../../data/coffees.json'
+import { CoffeeList, Heading, Hero, HeroContent, Info } from './styles'
 
 export function Home() {
   const theme = useTheme()
@@ -73,6 +76,16 @@ export function Home() {
 
         <img src="/images/hero-bg.svg" id="hero-bg" alt="" />
       </Hero>
+
+      <CoffeeList>
+        <h2>Nossos cafés</h2>
+
+        <div>
+          {coffees.map((coffee) => (
+            <Card key={coffee.id} coffee={coffee} />
+          ))}
+        </div>
+      </CoffeeList>
     </div>
   )
 }
