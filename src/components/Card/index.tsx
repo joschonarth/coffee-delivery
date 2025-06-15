@@ -3,6 +3,7 @@ import { useTheme } from 'styled-components'
 import { useEffect, useState } from 'react'
 
 import { QuantityInput } from '../Form/QuantityInput'
+import { useCart } from '../../hooks/useCart'
 
 import {
   CoffeeImg,
@@ -30,6 +31,7 @@ export function Card({ coffee }: Props) {
   const [quantity, setQuantity] = useState(1)
   const [isItemAdded, setIsItemAdded] = useState(false)
   const theme = useTheme()
+  const { addItem } = useCart()
 
   function incrementQuantity() {
     setQuantity((state) => state + 1)
@@ -42,6 +44,7 @@ export function Card({ coffee }: Props) {
   }
 
   function handleAddItem() {
+    addItem({ id: coffee.id, quantity })
     setIsItemAdded(true)
     setQuantity(1)
   }
