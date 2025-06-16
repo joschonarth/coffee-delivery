@@ -7,6 +7,8 @@
   <img src="https://img.shields.io/github/languages/count/joschonarth/coffee-delivery?style=for-the-badge&color=8047F8&labelColor=1C1E26" alt="languages-count">
 </p>
 
+![Coffee Delivery - Home](https://github.com/user-attachments/assets/f6d05725-2601-4a8a-a646-59842802ee0f)
+
 ## 📖 Visão Geral
 
 **Coffee Delivery** é uma aplicação web para compra e entrega de cafés artesanais. O usuário pode selecionar produtos, configurar o carrinho, preencher o endereço de entrega e finalizar a compra de forma prática e rápida.
